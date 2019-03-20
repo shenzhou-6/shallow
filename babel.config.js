@@ -7,10 +7,5 @@ module.exports = {
             "import",
             {libraryName: "ant-design-vue", libraryDirectory: "es", style: true}
         ]
-    ],
-    css:{
-        loaderOptions:{
-            javascriptEnabled: true
-        }
-    }
+    ]
 }
