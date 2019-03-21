@@ -36,6 +36,19 @@
               //  this.setSidebar(!this.collapsed)
                 triggerWindowResizeEvent()
             },
+        },
+        watch: {
+            sidebarOpened (val) {
+                this.collapsed = !val
+            }
+        },
+        computed: {
+            contentPaddingLeft () {
+                if (this.sidebarOpened) {
+                    return '256px'
+                }
+                return '80px'
+            }
         }
     }
 </script>
