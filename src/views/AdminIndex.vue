@@ -5,7 +5,7 @@
 </template>
 
 <script>
-    import ShallowHeader from "../components/Layout/ShallowHeader";
+    import ShallowHeader from "../components/ShallowHeader";
     export default {
         name: "Layout",
         components: {ShallowHeader}

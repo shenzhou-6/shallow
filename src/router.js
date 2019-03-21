@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Login from './views/Login.vue'
 import AdminIndex from "./views/AdminIndex";
 import EditArticle from "./views/article/EditArticle";
+import GlobalLayout from "./components/Layout/GlobalLayout";
 
 Vue.use(Router)
 
@@ -10,6 +11,11 @@ export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
+    {
+      path: '/',
+      name: 'layout',
+      component: GlobalLayout
+    },
     {
       path: '/login',
       name: 'login',
